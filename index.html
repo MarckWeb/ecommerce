@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="public/bundle.css">
+    <script defer src="public/bundle.js"></script>
+    <title>My Store</title>
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <h2 class="header__logo">STORE</h2>
+            <nav class="header__menu">
+                <ul class="header__menu-list">
+                    <li class="header__menu-item"><a class="header__menu-link" href="">Categorias</a></li>
+                    <li class="header__menu-item"><a class="header__menu-link" data-accion="open-car" href="">Mis
+                            Compras</a></li>
+
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <article class="product" id="product" data-product-id="1">
+                <div class="product__images-shoes">
+                    <figure class="product__thumb" id="product__thumb">
+                        <img src="./img/thumbs/negro.png" alt="" class="product__thumb-img" />
+                        <img src="./img/thumbs/1.png" alt="" class="product__thumb-img" />
+                        <img src="./img/thumbs/2.png" alt="" class="product__thumb-img" />
+                        <img src="./img/thumbs/3.png" alt="" class="product__thumb-img" />
+                        <img src="./img/thumbs/4.png" alt="" class="product__thumb-img" />
+                    </figure>
+                    <figure class="product__big">
+                        <img class="product__big-image" src="./img/tennis/negro.png" alt="" />
+                    </figure>
+                </div>
+                <div>
+                    <article class="product__container-info">
+                        <section class="stars">
+                            <span class="stars__icons">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="stars__icons-svg"
+                                    viewBox="0 0 16 16">
+                                    <path
+                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                </svg>
+                            </span>
+                            <span class="stars__icons">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="stars__icons-svg"
+                                    viewBox="0 0 16 16">
+                                    <path
+                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                </svg>
+                            </span>
+                            <span class="stars__icons">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="stars__icons-svg"
+                                    viewBox="0 0 16 16">
+                                    <path
+                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                </svg>
+                            </span>
+                            <span class="stars__icons">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="stars__icons-svg"
+                                    viewBox="0 0 16 16">
+                                    <path
+                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                </svg>
+                            </span>
+                            <span class="stars__icons">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="stars__icons-svg"
+                                    viewBox="0 0 16 16">
+                                    <path
+                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                </svg>
+                            </span>
+                        </section>
+                        <h1 class="product__name" id="product__name">XA PRO 3D V8</h1>
+                        <p class="product__description">Zapatillas de trail running para hombre
+                        </p>
+                        <section class="product__items">
+                            <p class="product__items-property">Precio</p>
+                            <p class="product__items-money">50 €</p>
+                        </section>
+                        <section class="product__items" id="property-color">
+                            <p class="product__items-property">Color</p>
+                            <div class="product__radio">
+                                <label for="black">
+                                    <input class="product__radio-input" type="radio" name="color" id="black"
+                                        value="negro" checked>
+                                    <p
+                                        class="product__radio-text product__radio-text--color product__radio-text--black">
+                                        Negro</p>
+                                </label>
+                                <label for="red">
+                                    <input class="product__radio-input" type="radio" name="color" id="red" value="rojo"
+                                        checked>
+                                    <p class="product__radio-text product__radio-text--color product__radio-text--red">
+                                        Rojo
+                                    </p>
+                                </label>
+                                <label for="yellow">
+                                    <input class="product__radio-input" type="radio" name="color" id="yellow"
+                                        value="amarillo" checked>
+                                    <p
+                                        class="product__radio-text product__radio-text--color product__radio-text--yellow">
+                                        Amarillo
+                                    </p>
+                                </label>
+                            </div>
+                        </section>
+                        <section class="product__items" id="property-size">
+                            <p class="product__items-property">Tamaño</p>
+                            <div class="product__radio">
+                                <label for="1,5">
+                                    <input class="product__radio-input" type="radio" name="size" id="1,5" value="1,5"
+                                        checked>
+                                    <p class="product__radio-text">1,5</p>
+                                </label>
+                                <label for="2">
+                                    <input class="product__radio-input" type="radio" name="size" id="2" value="2"
+                                        checked>
+                                    <p class="product__radio-text">2</p>
+                                </label>
+                                <label for="2,5">
+                                    <input class="product__radio-input" type="radio" name="size" id="2,5" value="2,5"
+                                        checked>
+                                    <p class="product__radio-text">2,5</p>
+                                </label>
+                                <label for="3">
+                                    <input class="product__radio-input" type="radio" name="size" id="3" value="3"
+                                        checked>
+                                    <p class="product__radio-text">3</p>
+                                </label>
+                                <label for="3,5">
+                                    <input class="product__radio-input" type="radio" name="size" id="3,5" value="3,5"
+                                        checked>
+                                    <p class="product__radio-text">3,5</p>
+                                </label>
+                                <label for="4">
+                                    <input class="product__radio-input" type="radio" name="size" id="4" value="4"
+                                        checked>
+                                    <p class="product__radio-text">4</p>
+                                </label>
+                            </div>
+                        </section>
+                        <section class="product__items" id="product__items">
+                            <p class="product__items-property">Cantidad</p>
+                            <button class="product__btn-amount" id="substract-amount">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    viewBox="0 0 16 16">
+                                    <path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z" />
+                                </svg>
+                            </button>
+                            <input class="product__amount" type="text" name="" id="product__amount" value="1">
+                            <button class="product__btn-amount" id="add-amount">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    viewBox="0 0 16 16">
+                                    <path
+                                        d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
+                                </svg>
+                            </button>
+                        </section>
+                        <button class="product__btn-car" id="add-product-car" type="submit">Agregar a mis
+                            compras
+                        </button>
+                    </article>
+            </article>
+    </div>
+    <article class="info__more" id="info__more">
+        <ul class="tabs">
+            <li class="tabs__button tabs__button--active" data-tab="caracteristicas">
+                Caracteristicas
+            </li>
+            <li class="tabs__button" data-tab="reseñas">Reseñas</li>
+            <li class="tabs__button" data-tab="envio">Envio</li>
+        </ul>
+        <div class="tab tab--active" id="caracteristicas">
+            <h3 class="tab__title">Caracteristicas</h3>
+            <ul class="tab__list">
+                <li>Nunc ornare ex at diam fermentum scelerisque.</li>
+                <li>Integer vehicula nisl in sem faucibus, ac tincidunt magna dapibus.</li>
+                <li>Integer vel magna eget ipsum laoreet lobortis.</li>
+                <li>Phasellus viverra dui ut lorem tempus eleifend.</li>
+                <li>Maecenas dictum lacus et condimentum aliquam.</li>
+            </ul>
+        </div>
+        <section class="tab" id="reseñas">
+            <h3 class="tab__title">Reseñas</h3>
+            <div class="review">
+                <img src="./img/users/1.jpg" class="review__photo" alt="" />
+                <div class="review__info">
+                    <div class="review__stars">
+                        <div class="review__star">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
+                                <path
+                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                            </svg>
+                        </div>
+                        <div class="review__star">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
+                                <path
+                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                            </svg>
+                        </div>
+                        <div class="review__star">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
+                                <path
+                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                            </svg>
+                        </div>
+                        <div class="review__star">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
+                                <path
+                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                            </svg>
+                        </div>
+                        <div class="review__star">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
+                                <path
+                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                            </svg>
+                        </div>
+                    </div>
+                    <p class="review__date">31 de Mayo de 2022</p>
+                    <p class="review__text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed nunc dapibus,
+                        fringilla felis nec, consequat ipsum. Maecenas aliquam metus neque, a lobortis justo
+                        suscipit eu. Quisque sit amet orci at tortor fermentum suscipit bibendum in libero.
+                        Duis rhoncus massa blandit nunc gravida, at euismod augue congue.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <div class="tab" id="envio">
+            <h3 class="tab__title">Envio</h3>
+            <p class="tab__paragraph">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent consectetur hendrerit
+                nunc, nec aliquet nisi consequat nec. Fusce porttitor non quam vitae venenatis. Sed maximus
+                lacus at elit consequat, nec finibus nisl commodo. Vestibulum vitae urna quis nisi mollis
+                elementum non ac sem.
+            </p>
+            <p class="tab__paragraph">
+                Proin ut tristique est. Curabitur volutpat mi quam, et tristique ipsum dignissim ut. Nam
+                bibendum feugiat turpis sit amet auctor. Cras efficitur ullamcorper ligula. Sed nec tellus
+                odio. Cras eget fermentum odio. Maecenas molestie nulla lorem, a pulvinar risus malesuada
+                et.
+            </p>
+        </div>
+    </article>
+    </main>
+    </div>
+
+
+    <section class="notification" id="notification">
+        <p class="notification__title">Agregado al <b>Mis Compras</b></p>
+        <img class="notification__thumb" src="./img/thumbs/1.png" alt="">
+        <a href="#" class="notification__link" data-accion="open-car">Ver mis compras</a>
+
+    </section>
+
+    <article class="shopping " id="shopping">
+        <div class="shopping__overlay">
+            <section class="shopping__container">
+                <header class="shopping__header">
+                    <h4 class="shopping__title">Compras</h4>
+                    <button class="shopping__btn-close" data-accion="close-car">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            viewBox="0 0 16 16">
+                            <path
+                                d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm3.354 4.646L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 1 1 .708-.708z" />
+                        </svg>
+                    </button>
+                </header>
+                <div class="shopping__body" id="shopping__body">
+                    <p class="shopping__body-warning">No hay produtos en tus compras</p>
+                    <!-- div de las compras -->
+                </div>
+                <footer class="shopping__footer">
+                    <section class="shopping__container-total">
+                        <div>
+                            <p class="shopping__label">Total:</p>
+                            <p class="shopping__total">0</p>
+                        </div>
+                        <button class="shopping__btn-buy" id="shopping__btn-buy">Comprar</button>
+                    </section>
+                    <section class="shopping__container-btn-goback" data-accion="close-car">
+                        <button class="shopping__btn-goback">Regresar a la tienda</button>
+                    </section>
+                </footer>
+            </section>
+        </div>
+    </article>
+
+</body>
+
+</html>

@@ -1,0 +1,23 @@
+@use "variables";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: variables.$primary-font-family;
+  font-size: 16px;
+  background-color: variables.$background-main;
+}
+
+.container {
+  width: 100%;
+  max-width: 1100px;
+  margin: auto;
+}
+
+a {
+  text-decoration: none;
+}

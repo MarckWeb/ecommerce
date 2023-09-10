@@ -1,0 +1,194 @@
+@use "../variables";
+
+.shopping {
+  display: none;
+  font-size: 20px;
+  &.shopping--active {
+    display: block;
+  }
+
+  &__overlay {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background: rgba(68, 68, 68, 0.7);
+    display: flex;
+    justify-content: center;
+  }
+
+  &__container {
+    margin-top: 40px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 550px;
+  }
+
+  &__header {
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px 10px 0 0;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__title {
+    font-size: 24px;
+    font-weight: 600;
+  }
+
+  &__btn-close {
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s ease all;
+
+    &:hover {
+      color: orangered;
+    }
+  }
+
+  //no tomando el body
+  &__body {
+    background-color: #fff;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    &-warning {
+      text-align: center;
+      display: none;
+
+      //si no tiene productos
+      // &--active {
+      //     display: block;
+      // }
+    }
+  }
+
+  // Si el carrito tiene la clase vacio.
+  &-vacio {
+    // Mostramos el aviso de que no hay productos.
+    .shopping__body-warning {
+      display: block;
+    }
+  }
+
+  &__product {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.651);
+
+    &-info {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+    }
+
+    &-thumb {
+      width: 65px;
+      border-radius: 5px;
+      vertical-align: top;
+    }
+
+    &-name {
+      font-weight: 600;
+      margin-bottom: 5px;
+    }
+
+    &-amount {
+      font-weight: normal;
+    }
+
+    &-property {
+      display: flex;
+      gap: 10px;
+      color: grey;
+      font-size: 14px;
+      text-transform: capitalize;
+    }
+
+    &-review {
+      display: flex;
+      flex-direction: column;
+      align-items: end;
+      justify-content: center;
+    }
+
+    &-close-btn {
+      background: none;
+      border: none;
+      cursor: pointer;
+      margin-bottom: 10px;
+
+      transition: 0.3s ease all;
+
+      &:hover {
+        color: red;
+      }
+    }
+
+    &-price {
+      font-size: 16px;
+    }
+  }
+
+  &__footer {
+    padding: 20px;
+    background: #fff;
+    border-radius: 0 0 10px 10px;
+  }
+
+  &__container-total {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__container-btn-goback {
+    display: none;
+    justify-content: center;
+  }
+
+  // Si el carrito tiene la clase vacio.
+  &-vacio {
+    // Ocultamos el contenedor total.
+    .shopping__container-total {
+      display: none;
+    }
+
+    // Mostramos el contenedor del btn de regresar.
+    .shopping__container-btn-goback {
+      display: flex;
+    }
+  }
+
+  &__btn-goback,
+  &__btn-buy {
+    background: black;
+    padding: 15px 30px;
+    color: #fff;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    transition: 0.2s ease all;
+    border-radius: 5px;
+  }
+
+  &__label {
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+
+  &__total {
+    font-size: 24px;
+    font-weight: 600;
+  }
+
+  &__btn-buy:hover {
+    background-color: orangered;
+  }
+}

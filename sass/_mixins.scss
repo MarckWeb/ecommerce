@@ -1,0 +1,11 @@
+@mixin tableSize {
+  @media (min-width: 700px) {
+    @content;
+  }
+}
+
+@mixin deskSize {
+  @media (min-width: 1300px) {
+    @content;
+  }
+}

@@ -1,0 +1,28 @@
+.sublinks{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    list-style: none;
+    margin-top: 20px;
+    
+    &__svg{
+        
+        width: 10px;
+        height: 10px;
+    }
+
+    &__item{
+
+        &-links{
+
+            &:hover{
+                text-decoration: underline;
+            }
+        } 
+
+        &:last-child a{
+            color: orangered;
+        }
+    } 
+   
+}
